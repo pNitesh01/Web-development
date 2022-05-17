@@ -9,6 +9,12 @@ h1 {
     line-height: 1.5;
 }
 
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
 h3 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
@@ -75,4 +81,33 @@ p {
 
 .icon:hover {
     color: #ff4c68;
+}
+
+/* Testimonials */
+#testimonials {
+    background-color: #ef8172;
+    color: #ffffff;
+    text-align: center;
+}
+
+.testimonial-image {
+    border-radius: 100%;
+    margin: 20px;
+    width: 10%;
+}
+
+/* Press */
+#press {
+    background-color: #ef8172;
+    text-align: center;
+    padding: 3%;
+}
+
+.press-logo {
+    width: 15%;
+    margin: 20px 20px;
+}
+
+.carousel-item {
+    padding: 7% 15%;
 }
