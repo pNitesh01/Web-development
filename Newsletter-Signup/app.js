@@ -40,7 +40,7 @@ app.post('/', (req, res) => {
 
     const options = {
         method: "POST",
-        // auth: process.env.USER_ID + ":" + process.env.API_KEY
+        auth: process.env.USER_ID + ":" + process.env.API_KEY
     };
 
     const request = https.request(url, options, (response) => {
@@ -66,6 +66,10 @@ app.post('/failure', (req, res) => {
 });
 
 
-app.listen(3000, () => {
+app.listen(process.env.PORT || 3000, () => {
     console.log("server is running on port 3000");
 });
+
+
+// Heroku App Url
+// https://evening-earth-14343.herokuapp.com/
