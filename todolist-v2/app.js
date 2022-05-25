@@ -10,7 +10,7 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb://127.0.0.1:27017/todolistDB", {useNewUrlParser: true});
+mongoose.connect("mongodb+srv://admin-nitesh:Test123@cluster0.tzrjh.mongodb.net/todolistDB", {useNewUrlParser: true});
 
 const itemsSchema = {
   name: String
@@ -129,6 +129,6 @@ app.post("/delete", (req, res) => {
 
 });
 
-app.listen(3000, () => {
-  console.log("Server started on port 3000");
+app.listen(process.env.PORT || 3000, () => {
+  console.log("Server started successfully.");
 });
