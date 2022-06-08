@@ -1,0 +1,199 @@
+{
+	"info": {
+		"_postman_id": "fe05623c-8d68-4c6d-9239-b0461fdc28f0",
+		"name": "postman-requests",
+		"description": "API practise.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/articles",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "Jack Bauer",
+							"type": "text"
+						},
+						{
+							"key": "content",
+							"value": "Jack Bauer is a fictional character and the lead protagonist of the Fox television series 24. His character has worked in various capacities on the show, often as a member of the Counter Terrorist Unit (CTU) based in Los Angeles, and working with the FBI in Washington, D.C. during season 7.",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/articles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"articles"
+					]
+				},
+				"description": "Post an article."
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/articles",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/articles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"articles"
+					]
+				},
+				"description": "Get all articles."
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/articles",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/articles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"articles"
+					]
+				},
+				"description": "Delete all articles."
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/articles/Jack%20Bauer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/articles/Jack%20Bauer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"articles",
+						"Jack%20Bauer"
+					]
+				},
+				"description": "Get specific article."
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/articles/Jack%20Bauer",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "Chuck Norris",
+							"type": "text"
+						},
+						{
+							"key": "content",
+							"value": "Carlos Ray \"Chuck\" Norris (born March 10, 1940) is an American martial artist and actor. He is a black belt in Tang Soo Do, Brazilian jiu jitsu and judo.",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/articles/Jack%20Bauer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"articles",
+						"Jack%20Bauer"
+					]
+				},
+				"description": "Put specific article."
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/articles/Chuck%20Norris",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "Chuck Norris",
+							"type": "text"
+						},
+						{
+							"key": "content",
+							"value": "Carlos Ray \"Chuck\" Norris (born March 10, 1940) is an American martial artist and actor. He is a black belt in Tang Soo Do, Brazilian jiu jitsu and judo.",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/articles/Chuck%20Norris",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"articles",
+						"Chuck%20Norris"
+					]
+				},
+				"description": "Patch specific article."
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/articles/Chuck%20Norris",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/articles/Chuck%20Norris",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"articles",
+						"Chuck%20Norris"
+					]
+				},
+				"description": "Delete a specific article."
+			},
+			"response": []
+		}
+	]
+}
